@@ -172,9 +172,13 @@
   .btn-outline{border:2px solid var(--chalk-white);color:var(--chalk-white);}
   .btn-outline:hover{background:var(--chalk-white);color:var(--chalk-green);}
 
-  /* ===== Reveal animation ===== */
-  .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease, transform .7s ease;}
-  .reveal.show{opacity:1;transform:translateY(0);}
+/* ===== Reveal animation removed ===== */
+.reveal,
+.reveal.show{
+  opacity:1;
+  transform:none;
+  transition:none;
+}
 
   /* ===== Stamp ===== */
   .stamp{color:var(--ink-red);opacity:.85;filter:drop-shadow(0 2px 2px rgba(0,0,0,.08));}
@@ -894,7 +898,7 @@
       "m-gallery": "तस्बिरहरू",
       "m-classroom": "कक्षाकोठा",
       "m-contact": "सम्पर्क",
-      "hero-greeting": "🙏 नमस्ते, म हुँ",
+      "hero-greeting": "🙏 नमस्ते, म",
       "hero-tagline": "गणित, कम्प्युटर तथा सामान्य ज्ञान शिक्षक",
       "hero-school": "सुनवर्षि-६, मोरङ, नेपाल",
       "btn-contact": "सम्पर्क गर्नुहोस्",
@@ -1062,12 +1066,6 @@
 
   /* ---------- Back to top ---------- */
   document.getElementById('backTop').onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
-
-  /* ---------- Reveal on scroll ---------- */
-  const io = new IntersectionObserver(entries=>{
-    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); } });
-  },{threshold:0.15});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
   /* ---------- Counter animation ---------- */
   const counters = document.querySelectorAll('.counter');

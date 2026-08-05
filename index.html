@@ -59,7 +59,10 @@
     --wood:#6e4626;
   }
   *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:35px; /* 30px banner + 4px extra */
+}
   body{
     font-family:'Poppins',sans-serif;
     color:var(--text-dark);
@@ -341,7 +344,7 @@
         <span id="typed"></span><span class="typed-cursor">&nbsp;</span>
       </h1>
       <p class="chalk-text text-lg md:text-2xl opacity-90 mb-2 font-semibold" data-i18n="hero-tagline">Mathematics, Computer & G.K. Teacher</p>
-      <p class="chalk-text opacity-75 mb-8 text-sm md:text-base" data-i18n="hero-school">Holy Cross Bal Adarsha Bidhya Sadan · Sunbarshi-6, Morang, Nepal</p>
+      <p class="chalk-text opacity-75 mb-8 text-sm md:text-base" data-i18n="hero-school">Sunbarshi-6, Morang, Nepal</p>
       <div class="flex flex-wrap gap-4">
         <a href="#contact" class="btn-primary px-6 py-3 rounded-full font-medium text-sm md:text-base transition"><i class="fa-solid fa-phone mr-2"></i><span data-i18n="btn-contact">Get in Touch</span></a>
         <a href="#journey" class="btn-outline px-6 py-3 rounded-full font-medium text-sm md:text-base transition"><i class="fa-solid fa-graduation-cap mr-2"></i><span data-i18n="btn-journey">My Journey</span></a>

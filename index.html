@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Umanath Paudel (Sunil Paudel) | Teacher · Mentor · Guide</title>
+<meta name="description" content="Official personal website of Umanath Paudel (Sunil Paudel) — Mathematics, Computer and G.K. teacher at Holy Cross Bal Adarsha Bidhya Sadan, Sunbarshi-6, Morang, Nepal.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Umanath Paudel (Sunil Paudel) | Teacher · Mentor · Guide">
+<meta property="og:description" content="Mathematics, Computer & G.K. Teacher from Sunbarshi-6, Morang, Nepal. Shaping minds since 2010.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://umanath.com.np">
+
+<!-- Favicon -->
+<link rel="icon" type="image/jpeg" href="Images/favicon.jpg">
+<link rel="apple-touch-icon" href="Images/favicon.jpg">
+<meta property="og:image" content="https://umanath.com.np/Images/home.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Caveat:wght@600;700&family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Yatra+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Umanath Paudel",
+  "alternateName": "Sunil Paudel",
+  "jobTitle": "Mathematics, Computer & G.K. Teacher",
+  "worksFor": { "@type": "EducationalOrganization", "name": "Holy Cross Bal Adarsha Bidhya Sadan" },
+  "email": "mailto:sunilpdl25@gmail.com",
+  "telephone": "+9779842048160",
+  "url": "https://umanath.com.np",
+  "sameAs": ["https://www.facebook.com/sunil.pdl"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Sunbarshi-6", "addressRegion": "Morang", "addressCountry": "Nepal" }
+}
+</script>
+
+<style>
+  :root{
+    --chalk-green:#1f3b2e;
+    --chalk-green-2:#24463a;
+    --chalk-green-3:#16281f;
+    --paper:#faf4e6;
+    --paper-2:#f3ead4;
+    --paper-line:#d9cdae;
+    --ink-red:#a92435;
+    --ink-red-2:#7c1b28;
+    --saffron:#e65100;
+    --saffron-gold:#ff9800;
+    --nepal-blue:#0b3d91;
+    --chalk-white:#f7f6f2;
+    --gold:#c8912f;
+    --text-dark:#2a2822;
+    --wood:#6e4626;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Poppins',sans-serif;
+    color:var(--text-dark);
+    background:var(--paper);
+    background-image: repeating-linear-gradient(var(--paper), var(--paper) 38px, var(--paper-line) 39px);
+    overflow-x:hidden;
+  }
+  .font-hand{font-family:'Kalam',cursive;}
+  .font-sign{font-family:'Caveat',cursive;}
+  .font-dev{font-family:'Noto Sans Devanagari',sans-serif;}
+  .font-vedic{font-family:'Yatra One', 'Noto Sans Devanagari', serif;}
+
+  /* ===== Fixed Top Vedic Banner ===== */
+  .vedic-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 60;
+    background: linear-gradient(90deg, #7c1b28, #e65100, #7c1b28);
+    color: #fff;
+    font-size: 0.8rem;
+    height: 30px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  }
+
+  /* ===== Scroll progress ===== */
+  #progressBar{position:fixed;top:30px;left:0;height:4px;background:linear-gradient(90deg,var(--ink-red),var(--saffron-gold),var(--gold));width:0%;z-index:9999;transition:width .1s linear;}
+
+  /* ===== Chalk texture ===== */
+  .chalkboard{
+    background-color:var(--chalk-green);
+    background-image:
+      radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1.4px),
+      radial-gradient(rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size: 5px 5px, 3px 3px;
+    background-position:0 0, 2px 2px;
+    position:relative;
+  }
+  .chalkboard-frame{border-top:10px solid var(--wood);border-bottom:26px solid var(--wood);box-shadow:inset 0 0 60px rgba(0,0,0,.5);}
+  .chalk-text{color:var(--chalk-white);text-shadow:0 0 2px rgba(255,255,255,.25), 0 0 12px rgba(255,255,255,.08);}
+
+  /* ===== Notebook margin ===== */
+  .paper-section{position:relative;}
+  .margin-line{display:none;}
+  @media(min-width:768px){
+    .margin-line{
+      display:block;position:absolute;top:0;bottom:0;left:56px;width:2px;
+      background:linear-gradient(var(--ink-red-2), var(--ink-red), var(--ink-red-2));
+      opacity:.35;z-index:0;
+    }
+  }
+
+  /* ===== Nav ===== */
+  #siteNav{
+    transition:box-shadow .4s ease, padding .3s ease;
+    background:rgba(250,244,230,0.98);
+    backdrop-filter:blur(6px);
+    box-shadow:0 2px 14px rgba(0,0,0,.12);
+  }
+  #siteNav.scrolled{box-shadow:0 4px 22px rgba(0,0,0,.18);}
+
+  @media(max-width:640px){
+    .doodle{font-size:1.3rem !important;}
+    .doodle:nth-of-type(4),.doodle:nth-of-type(6){display:none;}
+    .polaroid img{height:130px;}
+    .frame-photo img{height:130px;}
+    .flip-card{height:250px;}
+  }
+  .nav-link{position:relative;}
+  .nav-link::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--ink-red);transition:width .3s ease;}
+  .nav-link:hover::after,.nav-link.active::after{width:100%;}
+
+  /* ===== Logo badge ===== */
+    .logo-badge{
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    border:2px dashed var(--saffron);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--paper-2);
+    box-shadow:0 0 10px rgba(230,81,0,0.2);
+    overflow:hidden;
+    padding:2px;
+  }
+  .logo-badge img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+  }
+
+  /* ===== Hero doodles ===== */
+  .doodle{position:absolute;color:rgba(247,246,242,0.18);font-family:'Kalam',cursive;font-weight:700;user-select:none;pointer-events:none;animation:floaty 7s ease-in-out infinite;}
+  @keyframes floaty{0%,100%{transform:translateY(0) rotate(var(--r,0deg));}50%{transform:translateY(-18px) rotate(var(--r,0deg));}}
+
+  .typed-cursor{border-right:3px solid var(--saffron-gold);animation:blink 1s step-start infinite;}
+  @keyframes blink{50%{border-color:transparent;}}
+
+  .btn-primary{background:var(--ink-red);color:#fff;box-shadow:0 8px 20px rgba(169,36,53,.35);}
+  .btn-primary:hover{background:var(--ink-red-2);}
+  .btn-outline{border:2px solid var(--chalk-white);color:var(--chalk-white);}
+  .btn-outline:hover{background:var(--chalk-white);color:var(--chalk-green);}
+
+  /* ===== Reveal animation ===== */
+  .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.show{opacity:1;transform:translateY(0);}
+
+  /* ===== Stamp ===== */
+  .stamp{color:var(--ink-red);opacity:.85;filter:drop-shadow(0 2px 2px rgba(0,0,0,.08));}
+
+  /* ===== Fact chip ===== */
+  .fact-chip{background:var(--paper-2);border:1px solid var(--paper-line);border-left:4px solid var(--saffron);}
+
+  /* ===== Timeline ===== */
+  .timeline-line{background:repeating-linear-gradient(to bottom, rgba(247,246,242,.5) 0 8px, transparent 8px 16px);}
+  .tl-dot{width:18px;height:18px;border-radius:50%;background:var(--saffron-gold);border:3px solid var(--chalk-white);box-shadow:0 0 0 4px var(--chalk-green);}
+  .tl-card{background:rgba(247,246,242,.05);border:1px solid rgba(247,246,242,.25);backdrop-filter:blur(2px);}
+  .tl-card.current{border-color:var(--saffron-gold);box-shadow:0 0 25px rgba(230,81,0,.25);}
+
+  /* ===== Subject flip cards ===== */
+  .flip-card{perspective:1200px;height:280px;}
+  .flip-inner{position:relative;width:100%;height:100%;transition:transform .7s;transform-style:preserve-3d;}
+  .flip-card:hover .flip-inner{transform:rotateY(180deg);}
+  .flip-front,.flip-back{position:absolute;inset:0;backface-visibility:hidden;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.5rem;text-align:center;}
+  .flip-front{background:var(--paper-2);border:2px solid var(--paper-line);}
+  .flip-back{background:var(--chalk-green);color:var(--chalk-white);transform:rotateY(180deg);border:1px solid var(--saffron-gold);}
+
+  /* ===== Corkboard ===== */
+  .corkboard{
+    background-color:#a9743f;
+    background-image:radial-gradient(rgba(0,0,0,.12) 1px, transparent 1.6px), radial-gradient(rgba(255,255,255,.05) 1px, transparent 1px);
+    background-size:6px 6px,4px 4px;
+  }
+  .polaroid{background:#fffdf8;padding:12px;box-shadow:0 10px 20px rgba(0,0,0,.25);position:relative;transition:transform .35s ease, box-shadow .35s ease;cursor:pointer;}
+  .polaroid:hover{transform:translateY(-8px) scale(1.03) rotate(0deg) !important;box-shadow:0 18px 30px rgba(0,0,0,.32);z-index:5;}
+  .polaroid img{width:100%;height:190px;object-fit:cover;display:block;background:#e8ddc4;}
+  .pin{position:absolute;top:-10px;left:50%;transform:translateX(-50%);width:18px;height:18px;border-radius:50%;background:radial-gradient(circle at 35% 30%, #ff6b6b, #a3151f 70%);box-shadow:0 3px 4px rgba(0,0,0,.4);z-index:2;}
+
+  .rot-1{transform:rotate(-5deg);} .rot-2{transform:rotate(4deg);} .rot-3{transform:rotate(-2deg);}
+  .rot-4{transform:rotate(6deg);} .rot-5{transform:rotate(-6deg);} .rot-6{transform:rotate(2deg);}
+
+  /* ===== Work gallery ===== */
+  .frame-photo{background:var(--chalk-green-2);padding:8px;border-radius:8px;border:2px solid rgba(247,246,242,.25);position:relative;cursor:pointer;transition:transform .35s ease;}
+  .frame-photo:hover{transform:translateY(-6px);}
+  .frame-photo img{width:100%;height:190px;object-fit:cover;border-radius:4px;display:block;}
+
+  /* ===== Lightbox ===== */
+  #lightbox{position:fixed;inset:0;background:rgba(10,15,12,.94);z-index:99999;display:none;align-items:center;justify-content:center;flex-direction:column;padding:2rem;}
+  #lightbox img{max-width:90vw;max-height:78vh;border:6px solid #fff;border-radius:4px;box-shadow:0 10px 40px rgba(0,0,0,.6);}
+  #lightbox .lb-btn{color:#fff;font-size:1.7rem;padding:.6rem 1rem;cursor:pointer;opacity:.75;transition:opacity .2s;}
+  #lightbox .lb-btn:hover{opacity:1;}
+
+  /* ===== Language Switcher ===== */
+  .lang-btn {
+    background: var(--paper-2);
+    border: 1.5px solid var(--wood);
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--chalk-green);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .lang-btn:hover {
+    background: var(--saffron);
+    color: #fff;
+    border-color: var(--saffron);
+  }
+
+  /* ===== Back to top ===== */
+  #backTop{position:fixed;bottom:24px;right:24px;width:52px;height:52px;border-radius:12px;background:var(--wood);color:var(--chalk-white);display:none;align-items:center;justify-content:center;box-shadow:0 8px 18px rgba(0,0,0,.3);z-index:500;transform:rotate(-3deg);}
+
+  /* ===== Section heading ===== */
+  .section-tag{letter-spacing:3px;font-size:.75rem;text-transform:uppercase;}
+
+  ::selection{background:var(--saffron-gold);color:#fff;}
+
+  /* mobile menu */
+  #mobileMenu{transition:transform .4s ease;}
+</style>
+</head>
+<body class="antialiased">
+
+<!-- Fixed Top Auspicious Banner -->
+<div class="vedic-banner font-dev">
+  <span>🚩 ॐ श्री गणेशाय नमः</span>
+  <span class="hidden md:inline">|</span>
+  <span class="hidden md:inline">ॐ सरस्वती मया दृष्टा वीणापुस्तकधारिणी 🚩</span>
+</div>
+
+<div id="progressBar"></div>
+
+<!-- ============ NAV ============ -->
+<header id="siteNav" class="fixed top-[30px] left-0 right-0 z-50 px-4 md:px-10 py-3">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+<a href="#home" class="flex items-center gap-3">
+      <div class="logo-badge">
+        <img src="Images/favicon.jpg" alt="Umanath Paudel" onerror="placeholderImg(this,'UP')">
+      </div>
+      <div class="leading-tight">
+        <div class="font-hand text-lg md:text-xl font-bold" style="color:var(--chalk-green);" data-i18n="nav-name">Umanath Paudel</div>
+        <div class="text-[11px] tracking-widest uppercase opacity-75 font-semibold text-amber-800" data-i18n="nav-subtitle">Teacher · Mentor · Guide</div>
+      </div>
+    </a>
+    
+    <nav class="hidden md:flex items-center gap-6 font-medium text-sm">
+      <a href="#home" class="nav-link active" data-i18n="m-home">Home</a>
+      <a href="#about" class="nav-link" data-i18n="m-about">About</a>
+      <a href="#journey" class="nav-link" data-i18n="m-journey">Journey</a>
+      <a href="#teaching" class="nav-link" data-i18n="m-subjects">Subjects</a>
+      <a href="#gallery" class="nav-link" data-i18n="m-gallery">Gallery</a>
+      <a href="#classroom" class="nav-link" data-i18n="m-classroom">Classroom</a>
+      <a href="#contact" class="nav-link px-4 py-2 rounded-full" style="background:var(--ink-red);color:#fff;" data-i18n="m-contact">Contact</a>
+      
+      <!-- Language Toggle -->
+      <button onclick="toggleLanguage()" class="lang-btn ml-2" title="Switch Language / भाषा फेर्नुहोस्">
+        <i class="fa-solid fa-globe text-saffron"></i>
+        <span id="langLabel">नेपाली</span>
+      </button>
+    </nav>
+
+    <div class="flex items-center gap-3 md:hidden">
+      <button onclick="toggleLanguage()" class="lang-btn text-xs px-2 py-1">
+        <i class="fa-solid fa-globe"></i>
+        <span id="langLabelMobile">नेपाली</span>
+      </button>
+      <button id="menuBtn" class="text-2xl" style="color:var(--chalk-green);"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div id="mobileMenu" class="fixed inset-0 z-50 md:hidden translate-x-full" style="background:var(--chalk-green);">
+  <div class="flex justify-end p-6"><button id="closeMenu" class="text-3xl text-white"><i class="fa-solid fa-xmark"></i></button></div>
+  <div class="flex flex-col items-center gap-6 mt-6 font-hand text-2xl chalk-text">
+    <a href="#home" class="mnav" data-i18n="m-home">Home</a>
+    <a href="#about" class="mnav" data-i18n="m-about">About</a>
+    <a href="#journey" class="mnav" data-i18n="m-journey">Journey</a>
+    <a href="#teaching" class="mnav" data-i18n="m-subjects">Subjects</a>
+    <a href="#gallery" class="mnav" data-i18n="m-gallery">Gallery</a>
+    <a href="#classroom" class="mnav" data-i18n="m-classroom">Classroom</a>
+    <a href="#contact" class="mnav" data-i18n="m-contact">Contact</a>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="chalkboard chalkboard-frame relative min-h-screen flex items-center pt-36 pb-16 overflow-hidden">
+  <span class="doodle" style="top:14%;left:6%;font-size:3rem;--r:-10deg;">π</span>
+  <span class="doodle" style="top:70%;left:10%;font-size:2.2rem;--r:8deg;animation-delay:1s;">ॐ</span>
+  <span class="doodle" style="top:22%;right:9%;font-size:2.6rem;--r:12deg;animation-delay:2s;">√x</span>
+  <span class="doodle" style="top:66%;right:7%;font-size:2.4rem;--r:-8deg;animation-delay:.5s;">🪔</span>
+  <span class="doodle" style="top:45%;left:2%;font-size:1.6rem;--r:0deg;animation-delay:1.5s;">&lt;/&gt;</span>
+  <span class="doodle" style="top:8%;right:28%;font-size:1.5rem;--r:-6deg;animation-delay:2.5s;">101010</span>
+  <span class="doodle" style="bottom:8%;right:20%;font-size:2rem;--r:5deg;animation-delay:3s;">x²+y²</span>
+
+  <div class="max-w-6xl mx-auto px-6 md:px-10 relative z-10 w-full grid md:grid-cols-5 gap-10 items-center">
+    <div class="md:col-span-3">
+      <p class="font-dev chalk-text text-lg md:text-xl mb-3 text-amber-300 font-semibold flex items-center gap-2">
+        <span id="heroGreeting">🙏 Namaste, I am</span>
+      </p>
+      <h1 class="font-hand chalk-text text-4xl sm:text-6xl md:text-7xl mb-4 break-words">
+        <span id="typed"></span><span class="typed-cursor">&nbsp;</span>
+      </h1>
+      <p class="chalk-text text-lg md:text-2xl opacity-90 mb-2 font-semibold" data-i18n="hero-tagline">Mathematics, Computer & G.K. Teacher</p>
+      <p class="chalk-text opacity-75 mb-8 text-sm md:text-base" data-i18n="hero-school">Holy Cross Bal Adarsha Bidhya Sadan · Sunbarshi-6, Morang, Nepal</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#contact" class="btn-primary px-6 py-3 rounded-full font-medium text-sm md:text-base transition"><i class="fa-solid fa-phone mr-2"></i><span data-i18n="btn-contact">Get in Touch</span></a>
+        <a href="#journey" class="btn-outline px-6 py-3 rounded-full font-medium text-sm md:text-base transition"><i class="fa-solid fa-graduation-cap mr-2"></i><span data-i18n="btn-journey">My Journey</span></a>
+      </div>
+      <div class="mt-10 flex items-center gap-3 chalk-text opacity-80 text-sm">
+        <i class="fa-solid fa-dharmachakra text-amber-400 text-lg"></i> <span data-i18n="hero-quote">Shaping minds, one equation and lesson at a time — since 2010</span>
+      </div>
+    </div>
+
+    <div class="md:col-span-2 flex justify-center">
+      <div class="relative">
+        <div class="rounded-full overflow-hidden border-4 shadow-2xl relative" style="border-color:var(--saffron-gold);width:280px;height:280px;">
+          <img src="Images/home.jpg" alt="Umanath Paudel" class="w-full h-full object-cover" onerror="placeholderImg(this,'Umanath Paudel')">
+        </div>
+        <div class="absolute -bottom-4 -left-6 rounded-full px-4 py-2 font-sign text-xl shadow-lg border border-amber-800" style="background:var(--saffron-gold);color:#000;transform:rotate(-6deg);" data-i18n="badge-sunil">Sunil Sir ✍️</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute bottom-3 left-1/2 -translate-x-1/2 chalk-text opacity-70 animate-bounce">
+    <i class="fa-solid fa-chevron-down text-xl"></i>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="paper-section py-24 px-6 md:px-10 relative">
+  <div class="margin-line"></div>
+  <div class="max-w-6xl mx-auto relative">
+    <div class="reveal grid md:grid-cols-5 gap-14 items-center">
+      <div class="md:col-span-2 relative flex justify-center">
+        <div class="relative rotate-[-3deg]">
+          <div class="bg-white p-3 pb-10 shadow-2xl border border-amber-200" style="width:290px;">
+            <img src="Images/about.jpg" alt="Umanath Paudel portrait" class="w-full h-80 object-cover" onerror="placeholderImg(this,'Umanath Paudel')">
+            <p class="font-sign text-center text-xl mt-2 font-bold" style="color:var(--chalk-green);">Umanath Paudel</p>
+          </div>
+          <div class="absolute -top-8 -right-10 w-28 h-28 md:w-32 md:h-32">
+            <svg viewBox="0 0 200 200" class="stamp rotate-[-12deg]">
+              <defs><path id="circlePath" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+              <circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="5 4"/>
+              <circle cx="100" cy="100" r="72" fill="none" stroke="currentColor" stroke-width="2"/>
+              <text font-size="13" fill="currentColor" letter-spacing="2"><textPath href="#circlePath" startOffset="2%">★ उत्तम अध्यापक ★ SINCE 2010 ★</textPath></text>
+              <text x="100" y="108" text-anchor="middle" font-family="'Noto Sans Devanagari'" font-size="26" fill="currentColor" font-weight="bold">उत्तम</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:col-span-3">
+        <p class="section-tag font-semibold" style="color:var(--saffron);" data-i18n="about-tag">About Me</p>
+        <h2 class="font-hand text-4xl md:text-5xl mt-1 mb-6" style="color:var(--chalk-green);" data-i18n="about-title">A Little About My Story</h2>
+        <p class="text-base md:text-lg leading-relaxed opacity-90 mb-4" data-i18n="about-p1">
+          Namaste! I am <strong>Umanath Paudel</strong>, known fondly to friends, colleagues and students as <strong>Sunil Paudel</strong>. For more than a decade, I have stood at the blackboard, chalk in hand, helping young minds fall in love with numbers, logic and knowledge.
+        </p>
+        <p class="text-base md:text-lg leading-relaxed opacity-90 mb-6" data-i18n="about-p2">
+          I currently teach at Holy Cross Bal Adarsha Bidhya Sadan, where I've been a part of the family since 2014. Before that, I spent four wonderful years shaping students at Rising Nepal Secondary Boarding School. I believe every child carries a spark of brilliance — my job is simply to help it catch fire.
+        </p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-6">
+          <div class="fact-chip rounded-lg px-4 py-3 text-sm font-medium">
+            <i class="fa-solid fa-cake-candles mr-2" style="color:var(--ink-red);"></i><span data-i18n="fact-age">56 Years</span>
+          </div>
+          <div class="fact-chip rounded-lg px-4 py-3 text-sm font-medium">
+            <span class="mr-2" style="font-size:1.1em;">🇳🇵</span><span data-i18n="fact-nationality">Nepali</span>
+          </div>
+          <div class="fact-chip rounded-lg px-4 py-3 text-sm font-medium">
+            <span class="font-dev mr-2 text-amber-600 font-bold">ॐ</span><span data-i18n="fact-religion">Hindu</span>
+          </div>
+          <div class="fact-chip rounded-lg px-4 py-3 text-sm font-medium">
+            <i class="fa-solid fa-location-dot mr-2" style="color:var(--ink-red);"></i><span data-i18n="fact-location">Sunbarshi-6, Morang</span>
+          </div>
+          <div class="fact-chip rounded-lg px-4 py-3 text-sm font-medium">
+            <i class="fa-solid fa-graduation-cap mr-2" style="color:var(--ink-red);"></i><span data-i18n="fact-degree">Bachelor's Degree</span>
+          </div>
+          <div class="fact-chip rounded-lg px-4 py-3 text-sm font-medium">
+            <i class="fa-solid fa-chalkboard mr-2" style="color:var(--ink-red);"></i><span data-i18n="fact-exp">12+ Years Teaching</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section id="stats" class="paper-section py-20 px-6 md:px-10 relative" style="background:var(--paper-2);">
+  <div class="margin-line"></div>
+  <div class="max-w-6xl mx-auto relative reveal">
+    <div class="text-center mb-12">
+      <p class="section-tag font-semibold" style="color:var(--saffron);" data-i18n="stats-tag">By The Numbers</p>
+      <h2 class="font-hand text-4xl md:text-5xl mt-1" style="color:var(--chalk-green);" data-i18n="stats-title">A Career Written in Chalk</h2>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+      <div class="text-center bg-white/80 rounded-2xl py-7 px-3 border shadow-sm" style="border-color:var(--paper-line);">
+        <i class="fa-solid fa-calendar-check text-2xl md:text-3xl mb-2 md:mb-3" style="color:var(--saffron);"></i>
+        <div class="font-hand text-3xl md:text-5xl" style="color:var(--chalk-green);"><span class="counter" data-target="12">0</span>+</div>
+        <p class="text-[10px] md:text-xs uppercase tracking-widest opacity-70 mt-2 font-semibold" data-i18n="stat-years">Years Teaching</p>
+      </div>
+      <div class="text-center bg-white/80 rounded-2xl py-7 px-3 border shadow-sm" style="border-color:var(--paper-line);">
+        <i class="fa-solid fa-school text-2xl md:text-3xl mb-2 md:mb-3" style="color:var(--saffron);"></i>
+        <div class="font-hand text-3xl md:text-5xl" style="color:var(--chalk-green);"><span class="counter" data-target="2">0</span></div>
+        <p class="text-[10px] md:text-xs uppercase tracking-widest opacity-70 mt-2 font-semibold" data-i18n="stat-schools">Schools Served</p>
+      </div>
+      <div class="text-center bg-white/80 rounded-2xl py-7 px-3 border shadow-sm" style="border-color:var(--paper-line);">
+        <i class="fa-solid fa-book-open text-2xl md:text-3xl mb-2 md:mb-3" style="color:var(--saffron);"></i>
+        <div class="font-hand text-3xl md:text-5xl" style="color:var(--chalk-green);"><span class="counter" data-target="4">0</span></div>
+        <p class="text-[10px] md:text-xs uppercase tracking-widest opacity-70 mt-2 font-semibold" data-i18n="stat-subjects">Subjects Taught</p>
+      </div>
+      <div class="text-center bg-white/80 rounded-2xl py-7 px-3 border shadow-sm" style="border-color:var(--paper-line);">
+        <i class="fa-solid fa-users text-2xl md:text-3xl mb-2 md:mb-3" style="color:var(--saffron);"></i>
+        <div class="font-hand text-3xl md:text-5xl" style="color:var(--chalk-green);"><span class="counter" data-target="5000">0</span>+</div>
+        <p class="text-[10px] md:text-xs uppercase tracking-widest opacity-70 mt-2 font-semibold" data-i18n="stat-students">Students Guided</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNEY ============ -->
+<section id="journey" class="chalkboard py-24 px-6 md:px-10 relative">
+  <div class="max-w-5xl mx-auto relative reveal">
+    <div class="text-center mb-16">
+      <p class="section-tag font-semibold chalk-text opacity-70" data-i18n="journey-tag">My Journey</p>
+      <h2 class="font-hand chalk-text text-4xl md:text-5xl mt-1" data-i18n="journey-title">From the Classroom Bench to the Blackboard</h2>
+    </div>
+
+    <div class="relative pl-10 md:pl-0">
+      <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-[2px] timeline-line md:-translate-x-1/2"></div>
+
+      <!-- Education -->
+      <div class="relative mb-14 md:grid md:grid-cols-2 md:gap-10">
+        <div class="absolute left-4 md:left-1/2 top-1 -translate-x-1/2 tl-dot"></div>
+        <div class="md:col-start-1 md:text-right md:pr-10 pl-10 md:pl-0">
+          <div class="tl-card rounded-xl p-5 inline-block text-left">
+            <p class="text-xs uppercase tracking-widest chalk-text opacity-60 mb-1"><i class="fa-solid fa-graduation-cap mr-1"></i> <span data-i18n="edu-heading">Education</span></p>
+            <h3 class="font-hand chalk-text text-2xl mb-1" data-i18n="edu-degree">Bachelor's Degree</h3>
+            <p class="chalk-text opacity-75 text-sm mb-2" data-i18n="edu-desc">Bachelor in Business Studies (BBS)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rising Nepal -->
+      <div class="relative mb-14 md:grid md:grid-cols-2 md:gap-10">
+        <div class="absolute left-4 md:left-1/2 top-1 -translate-x-1/2 tl-dot"></div>
+        <div class="md:col-start-2 md:pl-10 pl-10">
+          <div class="tl-card rounded-xl p-5 inline-block">
+            <p class="text-xs uppercase tracking-widest chalk-text opacity-60 mb-1"><i class="fa-solid fa-school mr-1"></i> 2010 – 2014 · 4 Years</p>
+            <h3 class="font-hand chalk-text text-2xl mb-1" data-i18n="school-rising">Rising Nepal Secondary Boarding School</h3>
+            <p class="chalk-text opacity-75 text-sm mb-3" data-i18n="role-teacher">Subject Teacher</p>
+            <div class="flex flex-wrap gap-2 text-xs chalk-text">
+              <span class="px-3 py-1 rounded-full border border-white/30" data-i18n="tag-compmath">Compulsory Math</span>
+              <span class="px-3 py-1 rounded-full border border-white/30" data-i18n="tag-optmath">Optional Math</span>
+              <span class="px-3 py-1 rounded-full border border-white/30" data-i18n="tag-comp">Computer</span>
+              <span class="px-3 py-1 rounded-full border border-white/30" data-i18n="tag-gk">G.K.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Holy Cross -->
+      <div class="relative mb-2 md:grid md:grid-cols-2 md:gap-10">
+        <div class="absolute left-4 md:left-1/2 top-1 -translate-x-1/2 tl-dot" style="background:var(--saffron);"></div>
+        <div class="md:col-start-1 md:text-right md:pr-10 pl-10 md:pl-0">
+          <div class="tl-card current rounded-xl p-5 inline-block text-left relative">
+            <span class="absolute -top-3 right-4 md:left-4 md:right-auto text-[10px] uppercase tracking-widest px-3 py-1 rounded-full font-bold" style="background:var(--saffron-gold);color:#000;" data-i18n="tag-current">Current</span>
+            <p class="text-xs uppercase tracking-widest chalk-text opacity-60 mb-1"><i class="fa-solid fa-school-flag mr-1"></i> 2014 – Present</p>
+            <h3 class="font-hand chalk-text text-2xl mb-1" data-i18n="school-holycross">Holy Cross Bal Adarsha Bidhya Sadan</h3>
+            <p class="chalk-text opacity-75 text-sm mb-3" data-i18n="role-teacher">Subject Teacher</p>
+            <div class="flex flex-wrap gap-2 text-xs chalk-text">
+              <span class="px-3 py-1 rounded-full border border-white/30" data-i18n="tag-compmath">Compulsory Math</span>
+              <span class="px-3 py-1 rounded-full border border-white/30" data-i18n="tag-optmath">Optional Math</span>
+              <span class="px-3 py-1 rounded-full border border-white/30" data-i18n="tag-comp">Computer</span>
+              <span class="px-3 py-1 rounded-full border border-white/30" data-i18n="tag-gk">G.K.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SUBJECTS ============ -->
+<section id="teaching" class="paper-section py-24 px-6 md:px-10 relative">
+  <div class="margin-line"></div>
+  <div class="max-w-6xl mx-auto relative reveal">
+    <div class="text-center mb-16">
+      <p class="section-tag font-semibold" style="color:var(--saffron);" data-i18n="subjects-tag">What I Teach</p>
+      <h2 class="font-hand text-4xl md:text-5xl mt-1" style="color:var(--chalk-green);" data-i18n="subjects-title">Subjects Close to My Heart</h2>
+      <p class="opacity-75 mt-3 max-w-xl mx-auto text-sm md:text-base" data-i18n="subjects-sub">Hover over each card to flip it and learn a bit more.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Comp Math -->
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <i class="fa-solid fa-calculator text-5xl mb-4" style="color:var(--ink-red);"></i>
+            <h3 class="font-hand text-2xl" style="color:var(--chalk-green);" data-i18n="sub-cmath-title">Compulsory Mathematics</h3>
+          </div>
+          <div class="flip-back">
+            <p class="text-sm leading-relaxed" data-i18n="sub-cmath-desc">Building strong numerical foundations for everyday life, board exams and higher studies — one step, one sum at a time.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Opt Math -->
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <i class="fa-solid fa-infinity text-5xl mb-4" style="color:var(--ink-red);"></i>
+            <h3 class="font-hand text-2xl" style="color:var(--chalk-green);" data-i18n="sub-omath-title">Optional Mathematics</h3>
+          </div>
+          <div class="flip-back">
+            <p class="text-sm leading-relaxed" data-i18n="sub-omath-desc">Guiding students through algebra, geometry, trigonometry and beyond — turning "difficult" into "doable".</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Computer -->
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <i class="fa-solid fa-desktop text-5xl mb-4" style="color:var(--ink-red);"></i>
+            <h3 class="font-hand text-2xl" style="color:var(--chalk-green);" data-i18n="sub-comp-title">Computer</h3>
+          </div>
+          <div class="flip-back">
+            <p class="text-sm leading-relaxed" data-i18n="sub-comp-desc">Introducing students to the digital world — from basic literacy to logical, computational thinking.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- G.K. -->
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <i class="fa-solid fa-earth-asia text-5xl mb-4" style="color:var(--saffron);"></i>
+            <h3 class="font-hand text-2xl" style="color:var(--chalk-green);" data-i18n="sub-gk-title">General Knowledge (G.K.)</h3>
+          </div>
+          <div class="flip-back">
+            <p class="text-sm leading-relaxed" data-i18n="sub-gk-desc">Expanding horizons with general awareness, history, geography, science and current world affairs to nurture well-rounded minds.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEACHING PHILOSOPHY ============ -->
+<section id="philosophy" class="chalkboard py-24 px-6 md:px-10 relative overflow-hidden">
+  <span class="doodle" style="top:10%;left:6%;font-size:2rem;--r:-8deg;">✎</span>
+  <span class="doodle" style="bottom:10%;right:8%;font-size:2rem;--r:10deg;animation-delay:1s;">📐</span>
+  <span class="doodle" style="top:60%;left:3%;font-size:1.6rem;--r:5deg;animation-delay:2s;">📏</span>
+  <div class="max-w-6xl mx-auto relative reveal">
+    <div class="text-center mb-14">
+      <p class="section-tag font-semibold chalk-text opacity-70" data-i18n="phil-tag">Written On My Blackboard</p>
+      <h2 class="font-hand chalk-text text-4xl md:text-5xl mt-1" data-i18n="phil-title">My Teaching Philosophy</h2>
+      <p class="chalk-text opacity-70 mt-3 text-sm md:text-base max-w-xl mx-auto" data-i18n="phil-sub">The values that guide every single class I teach.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="tl-card rounded-xl p-6 text-center">
+        <i class="fa-solid fa-hourglass-half text-3xl mb-3" style="color:var(--saffron-gold);"></i>
+        <h3 class="font-hand text-2xl chalk-text mb-2" data-i18n="phil-patience-t">Patience</h3>
+        <p class="chalk-text opacity-75 text-sm" data-i18n="phil-patience-d">Every student learns at their own pace, and every pace deserves respect.</p>
+      </div>
+      <div class="tl-card rounded-xl p-6 text-center">
+        <i class="fa-solid fa-scale-balanced text-3xl mb-3" style="color:var(--saffron-gold);"></i>
+        <h3 class="font-hand text-2xl chalk-text mb-2" data-i18n="phil-discipline-t">Discipline</h3>
+        <p class="chalk-text opacity-75 text-sm" data-i18n="phil-discipline-d">Consistency and sincerity in the classroom shape character for life.</p>
+      </div>
+      <div class="tl-card rounded-xl p-6 text-center">
+        <i class="fa-solid fa-seedling text-3xl mb-3" style="color:var(--saffron-gold);"></i>
+        <h3 class="font-hand text-2xl chalk-text mb-2" data-i18n="phil-curiosity-t">Curiosity</h3>
+        <p class="chalk-text opacity-75 text-sm" data-i18n="phil-curiosity-d">I encourage questions — the "why" behind every formula and fact matters most.</p>
+      </div>
+      <div class="tl-card rounded-xl p-6 text-center">
+        <i class="fa-solid fa-hand-holding-heart text-3xl mb-3" style="color:var(--saffron-gold);"></i>
+        <h3 class="font-hand text-2xl chalk-text mb-2" data-i18n="phil-compassion-t">Compassion</h3>
+        <p class="chalk-text opacity-75 text-sm" data-i18n="phil-compassion-d">A good teacher first listens with the heart, then teaches with the mind.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PERSONAL GALLERY ============ -->
+<section id="gallery" class="corkboard py-24 px-6 md:px-10 relative">
+  <div class="max-w-6xl mx-auto reveal">
+    <div class="text-center mb-14">
+      <p class="section-tag font-semibold text-amber-200" data-i18n="gal-tag">Personal Moments</p>
+      <h2 class="font-hand text-4xl md:text-5xl mt-1 text-white drop-shadow" data-i18n="gal-title">Beyond the Blackboard</h2>
+      <p class="text-white/80 mt-3 text-sm md:text-base" data-i18n="gal-sub">A glimpse into life outside the classroom.</p>
+    </div>
+    <div id="personalGallery" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 md:gap-10"></div>
+  </div>
+</section>
+
+<!-- ============ WORK / CLASSROOM GALLERY ============ -->
+<section id="classroom" class="chalkboard py-24 px-6 md:px-10 relative">
+  <div class="max-w-6xl mx-auto reveal">
+    <div class="text-center mb-14">
+      <p class="section-tag font-semibold chalk-text opacity-70" data-i18n="class-tag">On Duty</p>
+      <h2 class="font-hand chalk-text text-4xl md:text-5xl mt-1" data-i18n="class-title">Life in the Classroom</h2>
+      <p class="chalk-text opacity-70 mt-3 text-sm md:text-base" data-i18n="class-sub">Moments captured while doing what I love most — teaching.</p>
+    </div>
+    <div id="workGallery" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6"></div>
+  </div>
+</section>
+
+<!-- ============ WISDOM / SHLOKAS ============ -->
+<section id="wisdom" class="paper-section py-24 px-6 md:px-10 relative overflow-hidden border-t-2 border-amber-300">
+  <div class="margin-line"></div>
+  <div class="absolute inset-0 flex items-center justify-center opacity-[0.04] text-[12rem] md:text-[18rem] font-dev pointer-events-none select-none">ॐ</div>
+  <div class="max-w-6xl mx-auto relative reveal">
+    <div class="text-center mb-14">
+      <p class="section-tag font-semibold" style="color:var(--saffron);" data-i18n="wisdom-tag">Words I Live By</p>
+      <h2 class="font-hand text-4xl md:text-5xl mt-1" style="color:var(--chalk-green);" data-i18n="wisdom-title">Shlokas That Shape My Teaching</h2>
+      <p class="opacity-75 mt-3 text-sm md:text-base max-w-xl mx-auto" data-i18n="wisdom-sub">Ancient wisdom that guides a modern classroom.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+      <div class="fact-chip rounded-xl p-6 md:p-8">
+        <div class="flex items-center justify-between mb-2">
+          <i class="fa-solid fa-quote-left text-2xl" style="color:var(--saffron);"></i>
+          <span class="text-amber-800 font-dev font-bold">🚩 गुरु मन्त्र</span>
+        </div>
+        <p class="font-dev text-lg md:text-xl leading-relaxed mb-3 font-semibold" style="color:var(--chalk-green);">गुरुर्ब्रह्मा गुरुर्विष्णुः गुरुर्देवो महेश्वरः। गुरुः साक्षात् परब्रह्म तस्मै श्री गुरवे नमः॥</p>
+        <p class="italic opacity-80 text-sm font-medium" data-i18n="shloka-1">"The Guru is Brahma, Vishnu and Shiva — verily the Supreme Being. Salutations to that Guru."</p>
+      </div>
+
+      <div class="fact-chip rounded-xl p-6 md:p-8">
+        <div class="flex items-center justify-between mb-2">
+          <i class="fa-solid fa-quote-left text-2xl" style="color:var(--saffron);"></i>
+          <span class="text-amber-800 font-dev font-bold">🪔 विद्या सूत्र</span>
+        </div>
+        <p class="font-dev text-lg md:text-xl leading-relaxed mb-3 font-semibold" style="color:var(--chalk-green);">सा विद्या या विमुक्तये।</p>
+        <p class="italic opacity-80 text-sm font-medium" data-i18n="shloka-2">"That alone is true knowledge which liberates" — education should free the mind, not just fill it.</p>
+      </div>
+
+      <div class="fact-chip rounded-xl p-6 md:p-8">
+        <div class="flex items-center justify-between mb-2">
+          <i class="fa-solid fa-quote-left text-2xl" style="color:var(--saffron);"></i>
+          <span class="text-amber-800 font-dev font-bold">📜 अनुशासन श्लोक</span>
+        </div>
+        <p class="font-dev text-lg md:text-xl leading-relaxed mb-3 font-semibold" style="color:var(--chalk-green);">विद्या ददाति विनयं विनयाद् याति पात्रताम्। पात्रत्वात् धनमाप्नोति धनात् धर्मं ततः सुखम्॥</p>
+        <p class="italic opacity-80 text-sm font-medium" data-i18n="shloka-3">"Knowledge gives discipline, discipline brings worthiness" — a reminder I share with every student.</p>
+      </div>
+
+      <div class="fact-chip rounded-xl p-6 md:p-8">
+        <div class="flex items-center justify-between mb-2">
+          <i class="fa-solid fa-quote-left text-2xl" style="color:var(--saffron);"></i>
+          <span class="text-amber-800 font-dev font-bold">🔔 प्रकाश प्रार्थना</span>
+        </div>
+        <p class="font-dev text-lg md:text-xl leading-relaxed mb-3 font-semibold" style="color:var(--chalk-green);">असतो मा सद्गमय। तमसो मा ज्योतिर्गमय। मृत्योर्मा अमृतं गमय॥</p>
+        <p class="italic opacity-80 text-sm font-medium" data-i18n="shloka-4">"Lead me from untruth to truth, from darkness to light" — the true purpose of a teacher.</p>
+      </div>
+
+      <div class="fact-chip rounded-xl p-6 md:p-8">
+        <div class="flex items-center justify-between mb-2">
+          <i class="fa-solid fa-quote-left text-2xl" style="color:var(--saffron);"></i>
+          <span class="text-amber-800 font-dev font-bold">🪷 सरस्वती वन्दना</span>
+        </div>
+        <p class="font-dev text-lg md:text-xl leading-relaxed mb-3 font-semibold" style="color:var(--chalk-green);">या कुन्देन्दुतुषारहारधवला या शुभ्रवस्त्रावृता।</p>
+        <p class="italic opacity-80 text-sm font-medium" data-i18n="shloka-5">Saraswati Vandana — a salutation to the Goddess of Knowledge, invoked before every lesson begins.</p>
+      </div>
+
+      <div class="fact-chip rounded-xl p-6 md:p-8">
+        <div class="flex items-center justify-between mb-2">
+          <i class="fa-solid fa-quote-left text-2xl" style="color:var(--saffron);"></i>
+          <span class="text-amber-800 font-dev font-bold">💡 विद्या धनम्</span>
+        </div>
+        <p class="font-dev text-lg md:text-xl leading-relaxed mb-3 font-semibold" style="color:var(--chalk-green);">न चोरहार्यं न च राजहार्यं न भ्रातृभाज्यं न च भारकारि। व्यये कृते वर्धत एव नित्यं विद्याधनं सर्वधनप्रधानम्॥</p>
+        <p class="italic opacity-80 text-sm font-medium" data-i18n="shloka-6">"Knowledge cannot be stolen, divided or burdensome — and it grows the more you share it." The gift I try to give every day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="chalkboard chalkboard-frame py-24 px-6 md:px-10 relative">
+  <div class="max-w-6xl mx-auto reveal">
+    <div class="text-center mb-14">
+      <p class="section-tag font-semibold chalk-text opacity-70" data-i18n="contact-tag">Get In Touch</p>
+      <h2 class="font-hand chalk-text text-4xl md:text-5xl mt-1" data-i18n="contact-title">Let's Connect</h2>
+      <p class="chalk-text opacity-70 mt-3 text-sm md:text-base max-w-xl mx-auto" data-i18n="contact-sub">Have a question, feedback, or just want to say Namaste? Reach out anytime — I'd love to hear from you.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="tel:+9779842048160" class="tl-card rounded-xl p-6 flex items-center gap-4 hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl" style="background:var(--ink-red);color:#fff;"><i class="fa-solid fa-phone"></i></div>
+        <div><p class="chalk-text text-xs opacity-60 uppercase tracking-wide" data-i18n="c-phone">Phone</p><p class="chalk-text font-medium">+977 984-2048160</p></div>
+      </a>
+      <a href="https://wa.me/9779842048160" target="_blank" rel="noopener" class="tl-card rounded-xl p-6 flex items-center gap-4 hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl" style="background:#25D366;color:#fff;"><i class="fa-brands fa-whatsapp"></i></div>
+        <div><p class="chalk-text text-xs opacity-60 uppercase tracking-wide">WhatsApp</p><p class="chalk-text font-medium">+977 984-2048160</p></div>
+      </a>
+      <a href="mailto:sunilpdl25@gmail.com" class="tl-card rounded-xl p-6 flex items-center gap-4 hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl" style="background:var(--saffron-gold);color:#28221a;"><i class="fa-solid fa-envelope"></i></div>
+        <div><p class="chalk-text text-xs opacity-60 uppercase tracking-wide" data-i18n="c-email">Email</p><p class="chalk-text font-medium break-all">sunilpdl25@gmail.com</p></div>
+      </a>
+      <a href="https://www.facebook.com/sunil.pdl" target="_blank" rel="noopener" class="tl-card rounded-xl p-6 flex items-center gap-4 hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl" style="background:#1877F2;color:#fff;"><i class="fa-brands fa-facebook-f"></i></div>
+        <div><p class="chalk-text text-xs opacity-60 uppercase tracking-wide">Facebook</p><p class="chalk-text font-medium">sunil.pdl</p></div>
+      </a>
+      <a href="https://umanath.com.np" class="tl-card rounded-xl p-6 flex items-center gap-4 hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl" style="background:var(--nepal-blue);color:#fff;"><i class="fa-solid fa-globe"></i></div>
+        <div><p class="chalk-text text-xs opacity-60 uppercase tracking-wide" data-i18n="c-web">Website</p><p class="chalk-text font-medium">umanath.com.np</p></div>
+      </a>
+      <a href="https://maps.google.com/?q=Sunbarshi-6,Morang,Nepal" target="_blank" rel="noopener" class="tl-card rounded-xl p-6 flex items-center gap-4 hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center text-xl" style="background:#8a5a2b;color:#fff;"><i class="fa-solid fa-location-dot"></i></div>
+        <div><p class="chalk-text text-xs opacity-60 uppercase tracking-wide" data-i18n="c-location">Location</p><p class="chalk-text font-medium" data-i18n="c-loc-val">Sunbarshi-6, Morang, Nepal</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="chalkboard py-12 px-6 md:px-10 text-center relative" style="background-color:var(--chalk-green-3);">
+  <svg class="mx-auto mb-6 opacity-40" width="200" height="20" viewBox="0 0 200 20"><path d="M0 10 Q 20 0, 40 10 T 80 10 T 120 10 T 160 10 T 200 10" stroke="#f7f6f2" stroke-width="1.5" fill="none"/></svg>
+  <p class="font-dev chalk-text text-2xl mb-1 text-amber-400">🚩 ॐ 🚩</p>
+  
+  <!-- Sanskrit Shloka Blessing -->
+  <div class="max-w-xl mx-auto my-4 px-4 py-3 rounded-lg bg-white/5 border border-amber-500/30">
+    <p class="font-dev text-lg md:text-xl text-amber-300 font-semibold mb-1">सर्वे भवन्तु सुखिनः। सर्वे सन्तु निरामयाः॥</p>
+    <p class="chalk-text opacity-80 text-xs md:text-sm italic" data-i18n="footer-shloka-trans">"May all beings be happy, may all beings be free from illness."</p>
+  </div>
+
+  <div class="flex justify-center gap-6 my-5 chalk-text text-lg">
+    <a href="tel:+9779842048160" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+    <a href="https://wa.me/9779842048160" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="mailto:sunilpdl25@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://www.facebook.com/sunil.pdl" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://umanath.com.np" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+  </div>
+  <p class="chalk-text opacity-70 text-sm font-sign text-lg mb-1" data-i18n="footer-name">Umanath Paudel ( Sunil )</p>
+  <p class="chalk-text opacity-50 text-xs">© <span id="year"></span> All rights reserved.</p>
+</footer>
+
+<button id="backTop" aria-label="Back to top"><i class="fa-solid fa-chalkboard"></i></button>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <div class="flex items-center gap-6">
+    <div class="lb-btn" id="lbPrev"><i class="fa-solid fa-chevron-left"></i></div>
+    <img id="lbImg" src="" alt="">
+    <div class="lb-btn" id="lbNext"><i class="fa-solid fa-chevron-right"></i></div>
+  </div>
+  <div class="lb-btn absolute top-6 right-8" id="lbClose"><i class="fa-solid fa-xmark"></i></div>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---------- Language Dictionary ---------- */
+  let currentLang = 'en';
+
+  const translations = {
+    en: {
+      "nav-name": "Umanath Paudel",
+      "nav-subtitle": "Teacher · Mentor · Guide",
+      "m-home": "Home",
+      "m-about": "About",
+      "m-journey": "Journey",
+      "m-subjects": "Subjects",
+      "m-gallery": "Gallery",
+      "m-classroom": "Classroom",
+      "m-contact": "Contact",
+      "hero-greeting": "🙏 Namaste, I am",
+      "hero-tagline": "Mathematics, Computer & G.K. Teacher",
+      "hero-school": "Holy Cross Bal Adarsha Bidhya Sadan · Sunbarshi-6, Morang, Nepal",
+      "btn-contact": "Get in Touch",
+      "btn-journey": "My Journey",
+      "hero-quote": "Shaping minds, one equation and lesson at a time — since 2010",
+      "badge-sunil": "Sunil Sir ✍️",
+      "about-tag": "About Me",
+      "about-title": "A Little About My Story",
+      "about-p1": "Namaste! I am <strong>Umanath Paudel</strong>, known fondly to friends, colleagues and students as <strong>Sunil Paudel</strong>. For more than a decade, I have stood at the blackboard, chalk in hand, helping young minds fall in love with numbers, logic and knowledge.",
+      "about-p2": "I currently teach at Holy Cross Bal Adarsha Bidhya Sadan, where I've been a part of the family since 2014. Before that, I spent four wonderful years shaping students at Rising Nepal Secondary Boarding School. I believe every child carries a spark of brilliance — my job is simply to help it catch fire.",
+      "fact-age": "56 Years",
+      "fact-nationality": "Nepali",
+      "fact-religion": "Hindu",
+      "fact-location": "Sunbarshi-6, Morang",
+      "fact-degree": "Bachelor's Degree",
+      "fact-exp": "12+ Years Teaching",
+      "stats-tag": "By The Numbers",
+      "stats-title": "A Career Written in Chalk",
+      "stat-years": "Years Teaching",
+      "stat-schools": "Schools Served",
+      "stat-subjects": "Subjects Taught",
+      "stat-students": "Students Guided",
+      "journey-tag": "My Journey",
+      "journey-title": "From the Classroom Bench to the Blackboard",
+      "edu-heading": "Education",
+      "edu-degree": "Bachelor's Degree",
+      "edu-desc": "Bachelor in Business Studies (BBS)",
+      "school-rising": "Rising Nepal Secondary Boarding School",
+      "school-holycross": "Holy Cross Bal Adarsha Bidhya Sadan",
+      "role-teacher": "Subject Teacher",
+      "tag-compmath": "Compulsory Math",
+      "tag-optmath": "Optional Math",
+      "tag-comp": "Computer",
+      "tag-gk": "G.K.",
+      "tag-current": "Current",
+      "subjects-tag": "What I Teach",
+      "subjects-title": "Subjects Close to My Heart",
+      "subjects-sub": "Hover over each card to flip it and learn a bit more.",
+      "sub-cmath-title": "Compulsory Mathematics",
+      "sub-cmath-desc": "Building strong numerical foundations for everyday life, board exams and higher studies — one step, one sum at a time.",
+      "sub-omath-title": "Optional Mathematics",
+      "sub-omath-desc": "Guiding students through algebra, geometry, trigonometry and beyond — turning \"difficult\" into \"doable\".",
+      "sub-comp-title": "Computer",
+      "sub-comp-desc": "Introducing students to the digital world — from basic literacy to logical, computational thinking.",
+      "sub-gk-title": "General Knowledge (G.K.)",
+      "sub-gk-desc": "Expanding horizons with general awareness, history, geography, science and current world affairs to nurture well-rounded minds.",
+      "phil-tag": "Written On My Blackboard",
+      "phil-title": "My Teaching Philosophy",
+      "phil-sub": "The values that guide every single class I teach.",
+      "phil-patience-t": "Patience",
+      "phil-patience-d": "Every student learns at their own pace, and every pace deserves respect.",
+      "phil-discipline-t": "Discipline",
+      "phil-discipline-d": "Consistency and sincerity in the classroom shape character for life.",
+      "phil-curiosity-t": "Curiosity",
+      "phil-curiosity-d": "I encourage questions — the \"why\" behind every formula and fact matters most.",
+      "phil-compassion-t": "Compassion",
+      "phil-compassion-d": "A good teacher first listens with the heart, then teaches with the mind.",
+      "gal-tag": "Personal Moments",
+      "gal-title": "Beyond the Blackboard",
+      "gal-sub": "A glimpse into life outside the classroom.",
+      "class-tag": "On Duty",
+      "class-title": "Life in the Classroom",
+      "class-sub": "Moments captured while doing what I love most — teaching.",
+      "wisdom-tag": "Words I Live By",
+      "wisdom-title": "Shlokas That Shape My Teaching",
+      "wisdom-sub": "Ancient wisdom that guides a modern classroom.",
+      "shloka-1": "\"The Guru is Brahma, Vishnu and Shiva — verily the Supreme Being. Salutations to that Guru.\"",
+      "shloka-2": "\"That alone is true knowledge which liberates\" — education should free the mind, not just fill it.",
+      "shloka-3": "\"Knowledge gives discipline, discipline brings worthiness\" — a reminder I share with every student.",
+      "shloka-4": "\"Lead me from untruth to truth, from darkness to light\" — the true purpose of a teacher.",
+      "shloka-5": "Saraswati Vandana — a salutation to the Goddess of Knowledge, invoked before every lesson begins.",
+      "shloka-6": "\"Knowledge cannot be stolen, divided or burdensome — and it grows the more you share it.\" The gift I try to give every day.",
+      "contact-tag": "Get In Touch",
+      "contact-title": "Let's Connect",
+      "contact-sub": "Have a question, feedback, or just want to say Namaste? Reach out anytime — I'd love to hear from you.",
+      "c-phone": "Phone",
+      "c-email": "Email",
+      "c-web": "Website",
+      "c-location": "Location",
+      "c-loc-val": "Sunbarshi-6, Morang, Nepal",
+      "footer-shloka-trans": "\"May all beings be happy, may all beings be free from illness.\"",
+      "footer-name": "Umanath Paudel ( Sunil )"
+    },
+    ne: {
+      "nav-name": "उमानाथ पौडेल",
+      "nav-subtitle": "शिक्षक · मार्गदर्शक · गुरु",
+      "m-home": "गृहपृष्ठ",
+      "m-about": "परिचय",
+      "m-journey": "कार्ययात्रा",
+      "m-subjects": "विषयहरू",
+      "m-gallery": "तस्बिरहरू",
+      "m-classroom": "कक्षाकोठा",
+      "m-contact": "सम्पर्क",
+      "hero-greeting": "🙏 नमस्ते, म हुँ",
+      "hero-tagline": "गणित, कम्प्युटर तथा सामान्य ज्ञान शिक्षक",
+      "hero-school": "होली क्रस बाल आदर्श विद्या सदन · सुनवर्षि-६, मोरङ, नेपाल",
+      "btn-contact": "सम्पर्क गर्नुहोस्",
+      "btn-journey": "मेरो कार्ययात्रा",
+      "hero-quote": "२०१० देखि ज्ञान र संस्कारको ज्योति फैलाउँदै",
+      "badge-sunil": "सुनील सर ✍️",
+      "about-tag": "मेरो परिचय",
+      "about-title": "जीवन यात्रा र अनुभव",
+      "about-p1": "नमस्ते! म <strong>उमानाथ पौडेल</strong>, साथीभाइ, सहकर्मी तथा विद्यार्थीहरू माझ <strong>'सुनील पौडेल'</strong> को नामले परिचित छु। विगत एक दशक भन्दा बढी समयदेखि म चक र डस्टरका साथ विद्यार्थीहरूलाई गणित, प्रविधि र ज्ञानका विविध पक्षहरू सिकाउँदै आइरहेको छु।",
+      "about-p2": "म सन् २०१४ देखि होली क्रस बाल आदर्श विद्या सदनमा अध्यापन गराउँदै आएको छु। त्यसअघि मैले राइजिङ नेपाल सेकेन्डरी बोर्डिङ स्कुलमा चार वर्ष अध्यापन गरेको थिएँ। प्रत्येक विद्यार्थीभित्र प्रतिभाको ज्योति हुन्छ, त्यसलाई उजागर गर्नु नै मेरो कर्तव्य हो।",
+      "fact-age": "५६ वर्ष",
+      "fact-nationality": "नेपाली",
+      "fact-religion": "हिन्दू",
+      "fact-location": "सुनवर्षि-६, मोरङ",
+      "fact-degree": "स्नातक तह (Bachelor's)",
+      "fact-exp": "१२+ वर्ष शिक्षण अनुभव",
+      "stats-tag": "तथ्याङ्कमा शिक्षण",
+      "stats-title": "अनुभव र उपलब्धिहरू",
+      "stat-years": "वर्ष शिक्षण अनुभव",
+      "stat-schools": "विद्यालयहरू",
+      "stat-subjects": "अध्यापन गराइने विषयहरू",
+      "stat-students": "मार्गदर्शन पाएका विद्यार्थीहरू",
+      "journey-tag": "मेरो कार्ययात्रा",
+      "journey-title": "शिक्षण यात्राको मार्गरेखा",
+      "edu-heading": "शिक्षा",
+      "edu-degree": "स्नातक तह (Bachelor's Degree)",
+      "edu-desc": "शिक्षकीय यात्राको बलियो आधार",
+      "school-rising": "राइजिङ नेपाल सेकेन्डरी बोर्डिङ स्कुल",
+      "school-holycross": "होली क्रस बाल आदर्श विद्या सदन",
+      "role-teacher": "विषय शिक्षक",
+      "tag-compmath": "अनिवार्य गणित",
+      "tag-optmath": "ऐच्छिक गणित",
+      "tag-comp": "कम्प्युटर",
+      "tag-gk": "सामान्य ज्ञान (G.K.)",
+      "tag-current": "हाल कार्यरत",
+      "subjects-tag": "अध्यापन क्षेत्र",
+      "subjects-title": "मेरो रुचि र अध्यापन गराइने विषयहरू",
+      "subjects-sub": "कार्डमा होभर गरी थप जानकारी हेर्नुहोस्।",
+      "sub-cmath-title": "अनिवार्य गणित (Compulsory Math)",
+      "sub-cmath-desc": "दैनिक जीवन, परीक्षा र उच्च शिक्षाका लागि गणितीय आधार बलियो बनाउँदै।",
+      "sub-omath-title": "ऐच्छिक गणित (Optional Math)",
+      "sub-omath-desc": "बीजगणित, ज्यामिति र त्रिकोणमितिलाई सरल र सहज ढङ्गले सिकाउँदै।",
+      "sub-comp-title": "कम्प्युटर (Computer)",
+      "sub-comp-desc": "विद्यार्थीहरूलाई डिजिटल संसार, कम्प्युटर साक्षरता र तार्किक सोचसँग जोड्दै।",
+      "sub-gk-title": "सामान्य ज्ञान (General Knowledge)",
+      "sub-gk-desc": "इतिहास, भूगोल, विज्ञान र समसामयिक घटनाक्रमको व्यापक ज्ञान प्रदान गर्दै।",
+      "phil-tag": "शिक्षण दर्शन",
+      "phil-title": "मेरो शिक्षण सिद्धान्त",
+      "phil-sub": "हरेक कक्षामा मैले अङ्गीकार गर्ने नैतिक मूल्यहरू।",
+      "phil-patience-t": "धैर्यता",
+      "phil-patience-d": "हरेक विद्यार्थीको सिक्ने गति फरक हुन्छ, र त्यसलाई सम्मान गर्नुपर्छ।",
+      "phil-discipline-t": "अनुशासन",
+      "phil-discipline-d": "कक्षाकोठाको अनुशासन र निरन्तरताले जीवनभरको चरित्र निर्माण गर्छ।",
+      "phil-curiosity-t": "जिज्ञासा",
+      "phil-curiosity-d": "म प्रश्न सोध्ने बानीलाई प्रोत्साहन गर्छु — सूत्र र तथ्य पछाडिको 'किन' महत्त्वपूर्ण हुन्छ।",
+      "phil-compassion-t": "सद्भाव र करुणा",
+      "phil-compassion-d": "असल शिक्षकले पहिले हृदयले सुन्छ, अनि मस्तिष्कले सिकाउँछ।",
+      "gal-tag": "व्यक्तिगत क्षणहरू",
+      "gal-title": "कक्षाकोठा बाहिरको जीवन",
+      "gal-sub": "दैनिक जीवन र विशेष स्मृतिहरू।",
+      "class-tag": "कक्षाकोठामा",
+      "class-title": "अध्यापनका केही झलकहरू",
+      "class-sub": "विद्यार्थीहरूलाई सिकाउँदाका विशेष पलहरू।",
+      "wisdom-tag": "मार्गदर्शक विचार",
+      "wisdom-title": "जीवन र शिक्षणमा प्रेरणा दिने श्लोकहरू",
+      "wisdom-sub": "वैदिक ज्ञान जसले आधुनिक शिक्षणलाई दिशा दिन्छ।",
+      "shloka-1": "\"गुरु नै ब्रह्मा, विष्णु र महेश्वर हुनुहुन्छ — साक्षात परब्रह्म हुनुहुन्छ। ती गुरुप्रति मेरो नमन छ।\"",
+      "shloka-2": "\"त्यही विद्या हो जसले मुक्ति दिन्छ\" — शिक्षाले मस्तिष्कलाई स्वतन्त्र बनाउनुपर्छ।",
+      "shloka-3": "\"विद्याले अनुशासन दिन्छ, अनुशासनले योग्यता ल्याउँछ\" — मेरो प्रत्येक विद्यार्थीलाई दिइने सन्देश।",
+      "shloka-4": "\"असत्यबाट सत्यतर्फ, अन्धकारबाट प्रकाशतर्फ लैजाऊ\" — शिक्षकको वास्तविक उद्देश्य।",
+      "shloka-5": "सरस्वती वन्दना — हरेक पाठ सुरु गर्नुअघि विद्याकी देवी सरस्वतीको आराधना।",
+      "shloka-6": "\"विद्या यस्तो धन हो जसलाई न चोरले चोर्न सक्छ, न राजाले खोस्न सक्छ, बाँड्दा झन् बढ्दै जान्छ।\"",
+      "contact-tag": "सम्पर्क",
+      "contact-title": "जोडिनुहोस्",
+      "contact-sub": "कुनै प्रश्न, प्रतिक्रिया वा परामर्शका लागि जुनसुकै समयमा सम्पर्क गर्न सक्नुहुन्छ।",
+      "c-phone": "फोन",
+      "c-email": "इमेल",
+      "c-web": "वेबसाइट",
+      "c-location": "ठेगाना",
+      "c-loc-val": "सुनवर्षि-६, मोरङ, नेपाल",
+      "footer-shloka-trans": "\"सबै प्राणी सुखी होऊन्, सबै निरोगी होऊन्।\"",
+      "footer-name": "उमानाथ पौडेल ( सुनील )"
+    }
+  };
+
+  function toggleLanguage() {
+    currentLang = currentLang === 'en' ? 'ne' : 'en';
+    applyLanguage(currentLang);
+  }
+
+  function applyLanguage(lang) {
+    document.getElementById('langLabel').textContent = lang === 'en' ? 'नेपाली' : 'English';
+    document.getElementById('langLabelMobile').textContent = lang === 'en' ? 'नेपाली' : 'English';
+    document.getElementById('heroGreeting').textContent = translations[lang]["hero-greeting"];
+
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[lang][key]) {
+        el.innerHTML = translations[lang][key];
+      }
+    });
+
+    // Reset typewriter with language-specific names
+    names = lang === 'ne' ? ["उमानाथ पौडेल", "सुनील पौडेल"] : ["Umanath Paudel", "Sunil Paudel"];
+    ni = 0; ci = 0; deleting = false;
+  }
+
+  /* ---------- Placeholder image generator ---------- */
+  function placeholderImg(imgEl, label){
+    imgEl.onerror = null;
+    const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'>
+      <rect width='100%' height='100%' fill='#24463a'/>
+      <circle cx='200' cy='150' r='55' fill='none' stroke='#f7f6f2' stroke-width='3' opacity='0.5'/>
+      <path d='M170 170 h60 l10 20 h-80 z' fill='none' stroke='#f7f6f2' stroke-width='3' opacity='0.5'/>
+      <text x='200' y='280' font-family='Poppins,Arial' font-size='18' fill='#f7f6f2' text-anchor='middle' opacity='0.75'>${label}</text>
+      <text x='200' y='305' font-family='Poppins,Arial' font-size='12' fill='#f7f6f2' text-anchor='middle' opacity='0.5'>photo coming soon</text>
+    </svg>`;
+    imgEl.src = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svg)));
+  }
+
+  /* ---------- Typewriter hero ---------- */
+  let names = ["Umanath Paudel", "Sunil Paudel"];
+  const typedEl = document.getElementById('typed');
+  let ni=0, ci=0, deleting=false;
+  function typeLoop(){
+    const current = names[ni];
+    if(!deleting){
+      ci++;
+      typedEl.textContent = current.slice(0,ci);
+      if(ci===current.length){ deleting=true; setTimeout(typeLoop,1400); return; }
+    } else {
+      ci--;
+      typedEl.textContent = current.slice(0,ci);
+      if(ci===0){ deleting=false; ni=(ni+1)%names.length; }
+    }
+    setTimeout(typeLoop, deleting?60:110);
+  }
+  typeLoop();
+
+  /* ---------- Nav scroll style + progress bar + active link ---------- */
+  const nav = document.getElementById('siteNav');
+  const progressBar = document.getElementById('progressBar');
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+  window.addEventListener('scroll', ()=>{
+    nav.classList.toggle('scrolled', window.scrollY>40);
+    const h = document.documentElement;
+    const pct = (h.scrollTop)/(h.scrollHeight-h.clientHeight)*100;
+    progressBar.style.width = pct+"%";
+    document.getElementById('backTop').style.display = window.scrollY>500 ? 'flex':'none';
+
+    let current='';
+    sections.forEach(sec=>{
+      const rect = sec.getBoundingClientRect();
+      if(rect.top<=120 && rect.bottom>=120) current = sec.id;
+    });
+    navLinks.forEach(l=>l.classList.toggle('active', l.getAttribute('href')==='#'+current));
+  });
+
+  /* ---------- Mobile menu ---------- */
+  const menuBtn=document.getElementById('menuBtn'), closeMenu=document.getElementById('closeMenu'), mobileMenu=document.getElementById('mobileMenu');
+  menuBtn.onclick=()=>mobileMenu.classList.remove('translate-x-full');
+  closeMenu.onclick=()=>mobileMenu.classList.add('translate-x-full');
+  document.querySelectorAll('.mnav').forEach(a=>a.onclick=()=>mobileMenu.classList.add('translate-x-full'));
+
+  /* ---------- Back to top ---------- */
+  document.getElementById('backTop').onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+
+  /* ---------- Reveal on scroll ---------- */
+  const io = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); } });
+  },{threshold:0.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  /* ---------- Counter animation ---------- */
+  const counters = document.querySelectorAll('.counter');
+  const counterIO = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        const el = entry.target;
+        const target = parseInt(el.dataset.target,10);
+        const duration = 1400;
+        const start = performance.now();
+        function step(now){
+          const progress = Math.min((now-start)/duration,1);
+          const eased = 1 - Math.pow(1-progress,3);
+          el.textContent = Math.floor(eased*target);
+          if(progress<1){ requestAnimationFrame(step); } else { el.textContent = target; }
+        }
+        requestAnimationFrame(step);
+        counterIO.unobserve(el);
+      }
+    });
+  },{threshold:0.5});
+  counters.forEach(c=>counterIO.observe(c));
+
+  /* ---------- Galleries ---------- */
+  const personalGallery = document.getElementById('personalGallery');
+  const workGallery = document.getElementById('workGallery');
+  const rotations = ['rot-1','rot-2','rot-3','rot-4','rot-5','rot-6'];
+  const pinColors = ['#a3151f','#c8912f','#3a6ea5','#4a7c59'];
+
+  const personalPhotos = [];
+  const workPhotos = [];
+
+  for(let i=1;i<=10;i++){
+    const path = `Images/Personal/image${i}.jpg`;
+    personalPhotos.push({src:path});
+    const fig = document.createElement('div');
+    fig.className = 'polaroid ' + rotations[(i-1)%rotations.length];
+    fig.innerHTML = `<div class="pin" style="background:radial-gradient(circle at 35% 30%, #fff, ${pinColors[i%pinColors.length]} 70%);"></div>
+      <img data-idx="${i-1}" data-gallery="personal" src="${path}" alt="Personal photo ${i}" loading="lazy">`;
+    personalGallery.appendChild(fig);
+  }
+
+  for(let i=1;i<=10;i++){
+    const path = `Images/Work/work${i}.jpg`;
+    workPhotos.push({src:path});
+    const fig = document.createElement('div');
+    fig.className = 'frame-photo';
+    fig.innerHTML = `<img data-idx="${i-1}" data-gallery="work" src="${path}" alt="Teaching photo ${i}" loading="lazy">`;
+    workGallery.appendChild(fig);
+  }
+
+  document.querySelectorAll('#personalGallery img, #workGallery img').forEach(img=>{
+    img.onerror = function(){ placeholderImg(this, this.dataset.gallery==='personal' ? 'Personal Photo' : 'Work Photo'); };
+  });
+
+  /* ---------- Lightbox ---------- */
+  const lightbox=document.getElementById('lightbox'), lbImg=document.getElementById('lbImg');
+  let activeGallery=[], activeIndex=0;
+
+  function openLightbox(gallery, index){
+    activeGallery = gallery==='personal'? personalPhotos : workPhotos;
+    activeIndex = index;
+    updateLightbox();
+    lightbox.style.display='flex';
+  }
+  function updateLightbox(){
+    const item = activeGallery[activeIndex];
+    lbImg.src = item.src;
+    lbImg.onerror = ()=>placeholderImg(lbImg,'Photo');
+  }
+  document.querySelectorAll('#personalGallery img, #workGallery img').forEach(img=>{
+    img.addEventListener('click', ()=> openLightbox(img.dataset.gallery, parseInt(img.dataset.idx)));
+  });
+  document.getElementById('lbClose').onclick = ()=> lightbox.style.display='none';
+  document.getElementById('lbNext').onclick = ()=>{ activeIndex=(activeIndex+1)%activeGallery.length; updateLightbox(); };
+  document.getElementById('lbPrev').onclick = ()=>{ activeIndex=(activeIndex-1+activeGallery.length)%activeGallery.length; updateLightbox(); };
+  lightbox.addEventListener('click', e=>{ if(e.target===lightbox) lightbox.style.display='none'; });
+  document.addEventListener('keydown', e=>{
+    if(lightbox.style.display==='flex'){
+      if(e.key==='Escape') lightbox.style.display='none';
+      if(e.key==='ArrowRight') document.getElementById('lbNext').click();
+      if(e.key==='ArrowLeft') document.getElementById('lbPrev').click();
+    }
+  });
+</script>
+</body>
+</html>

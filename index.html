@@ -238,19 +238,24 @@ html{
   @media (hover:none){ .openable-wrap::after{opacity:.85;} }
 
   /* ===== Lightbox ===== */
-  #lightbox{position:fixed;inset:0;background:rgba(10,15,12,.94);z-index:99999;display:none;align-items:center;justify-content:center;flex-direction:column;padding:2rem;touch-action:pan-y;}
-  #lightbox img{max-width:90vw;max-height:78vh;border:6px solid #fff;border-radius:4px;box-shadow:0 10px 40px rgba(0,0,0,.6);user-select:none;-webkit-user-drag:none;}
-  #lightbox .lb-btn{color:#fff;font-size:1.7rem;padding:.6rem 1rem;cursor:pointer;opacity:.75;transition:opacity .2s;}
+  #lightbox{position:fixed;inset:0;background:rgba(10,15,12,.94);z-index:99999;display:none;align-items:center;justify-content:center;flex-direction:column;padding:1.5rem;touch-action:pan-y;}
+  #lightbox .lb-stage{position:relative;display:flex;align-items:center;justify-content:center;width:100%;max-width:100%;}
+  #lightbox img{display:block;max-width:min(88vw,880px);max-height:76vh;width:auto;height:auto;margin:0 auto;border:6px solid #fff;border-radius:4px;box-shadow:0 10px 40px rgba(0,0,0,.6);user-select:none;-webkit-user-drag:none;}
+  #lightbox .lb-btn{position:absolute;top:50%;transform:translateY(-50%);color:#fff;font-size:1.7rem;padding:.6rem .8rem;cursor:pointer;opacity:.75;transition:opacity .2s;z-index:2;}
   #lightbox .lb-btn:hover{opacity:1;}
   #lightbox .lb-btn.lb-hidden{visibility:hidden;}
+  #lbPrev{left:.5rem;}
+  #lbNext{right:.5rem;}
+  #lbClose{position:absolute;top:1.5rem;right:2rem;transform:none;}
   #lbCounter{color:#fff;opacity:.7;font-size:.85rem;margin-top:.85rem;letter-spacing:1px;}
   body.lb-open{overflow:hidden;}
   @media (max-width:767px){
-    #lightbox{padding:1rem;}
-    #lightbox .flex.items-center.gap-6{gap:.5rem;width:100%;}
-    #lightbox img{max-width:100%;max-height:70vh;}
-    #lightbox .lb-btn{font-size:1.4rem;padding:.4rem .5rem;}
-    #lbClose{top:1rem !important;right:1rem !important;}
+    #lightbox{padding:.75rem;}
+    #lightbox img{max-width:90vw;max-height:68vh;border-width:4px;}
+    #lightbox .lb-btn{font-size:1.3rem;padding:.5rem .6rem;background:rgba(0,0,0,.35);border-radius:50%;width:2.4rem;height:2.4rem;display:flex;align-items:center;justify-content:center;}
+    #lbPrev{left:.25rem;}
+    #lbNext{right:.25rem;}
+    #lbClose{top:.85rem;right:.85rem;background:rgba(0,0,0,.35);border-radius:50%;width:2.2rem;height:2.2rem;display:flex;align-items:center;justify-content:center;font-size:1.1rem;}
   }
 
   /* ===== Language Switcher ===== */
@@ -811,13 +816,13 @@ html{
 
 <!-- Lightbox -->
 <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
-  <div class="flex items-center gap-6">
+  <div class="lb-stage">
     <div class="lb-btn" id="lbPrev" role="button" aria-label="Previous image" tabindex="0"><i class="fa-solid fa-chevron-left"></i></div>
     <img id="lbImg" src="" alt="">
     <div class="lb-btn" id="lbNext" role="button" aria-label="Next image" tabindex="0"><i class="fa-solid fa-chevron-right"></i></div>
   </div>
   <div id="lbCounter"></div>
-  <div class="lb-btn absolute top-6 right-8" id="lbClose" role="button" aria-label="Close viewer" tabindex="0"><i class="fa-solid fa-xmark"></i></div>
+  <div class="lb-btn" id="lbClose" role="button" aria-label="Close viewer" tabindex="0"><i class="fa-solid fa-xmark"></i></div>
 </div>
 
 <script>

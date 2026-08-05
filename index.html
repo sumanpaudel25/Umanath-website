@@ -247,7 +247,7 @@ html{
   #lbPrev,#lbNext{top:50%;transform:translateY(-50%);}
   #lbPrev{left:.5rem;}
   #lbNext{right:.5rem;}
-  #lbClose{top:1.5rem;right:2rem;position:absolute;}
+  #lbClose{top:1.5rem;right:2rem;}
   #lbCounter{color:#fff;opacity:.7;font-size:.85rem;margin-top:.85rem;letter-spacing:1px;}
   body.lb-open{overflow:hidden;}
   @media (max-width:767px){
@@ -257,7 +257,17 @@ html{
     #lbPrev,#lbNext{top:auto;bottom:1.25rem;transform:none;}
     #lbPrev{left:1rem;}
     #lbNext{right:1rem;}
-    #lbClose{top:.85rem;right:.85rem;bottom:auto;width:2.2rem;height:2.2rem;font-size:1.1rem;}
+    #lbClose{
+      position:fixed;
+      top:calc(env(safe-area-inset-top, 0px) + .75rem);
+      right:calc(env(safe-area-inset-right, 0px) + .75rem);
+      left:auto;
+      bottom:auto;
+      width:2.2rem;
+      height:2.2rem;
+      font-size:1.1rem;
+      z-index:3;
+    }
   }
 
   /* ===== Language Switcher ===== */
@@ -818,13 +828,13 @@ html{
 
 <!-- Lightbox -->
 <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
-  <div class="lb-btn" id="lbClose" role="button" aria-label="Close viewer" tabindex="0"><i class="fa-solid fa-xmark"></i></div>
   <div class="lb-stage">
     <img id="lbImg" src="" alt="">
   </div>
   <div class="lb-btn" id="lbPrev" role="button" aria-label="Previous image" tabindex="0"><i class="fa-solid fa-chevron-left"></i></div>
   <div class="lb-btn" id="lbNext" role="button" aria-label="Next image" tabindex="0"><i class="fa-solid fa-chevron-right"></i></div>
   <div id="lbCounter"></div>
+  <div class="lb-btn" id="lbClose" role="button" aria-label="Close viewer" tabindex="0"><i class="fa-solid fa-xmark"></i></div>
 </div>
 
 <script>

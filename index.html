@@ -307,7 +307,7 @@ html{
 
 <!-- Fixed Top Auspicious Banner -->
 <div class="vedic-banner font-dev">
-  <span>🚩 ॐ श्री गणेशाय नमः</span>
+  <span>🚩 ॐ श्री गणेशाय नम: 🚩</span>
   <span class="hidden md:inline">|</span>
   <span class="hidden md:inline">ॐ सरस्वती मया दृष्टा वीणापुस्तकधारिणी 🚩</span>
 </div>
@@ -426,15 +426,23 @@ html{
             <img src="Images/about.jpg" alt="Umanath Paudel portrait" class="w-full h-80 object-cover openable" data-gallery="about" data-idx="0" role="button" tabindex="0" aria-label="Open portrait photo" onerror="placeholderImg(this,'Umanath Paudel')">
             <p class="font-sign text-center text-xl mt-2 font-bold" style="color:var(--chalk-green);">Umanath Paudel</p>
           </div>
-          <div class="absolute -top-8 -right-10 w-28 h-28 md:w-32 md:h-32">
-            <svg viewBox="0 0 200 200" class="stamp rotate-[-12deg]">
-              <defs><path id="circlePath" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
-              <circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="5 4"/>
-              <circle cx="100" cy="100" r="72" fill="none" stroke="currentColor" stroke-width="2"/>
-              <text font-size="13" fill="currentColor" letter-spacing="2"><textPath href="#circlePath" startOffset="2%">★ उत्तम अध्यापक ★ SINCE 2010 ★</textPath></text>
-              <text x="100" y="108" text-anchor="middle" font-family="'Noto Sans Devanagari'" font-size="26" fill="currentColor" font-weight="bold">उत्तम</text>
-            </svg>
-          </div>
+  <div class="absolute -top-8 -right-10 w-28 h-28 md:w-32 md:h-32">
+    <svg viewBox="0 0 200 200" class="stamp rotate-[-12deg]">
+      <defs>
+        <path id="circlePath" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/>
+      </defs>
+      <!-- Background circle: Solid non-transparent white background -->
+      <circle cx="100" cy="100" r="90" fill="#ffffff" stroke="#1e40af" stroke-width="3" stroke-dasharray="5 4"/>
+      <!-- Inner border circle in blue -->
+      <circle cx="100" cy="100" r="72" fill="none" stroke="#1e40af" stroke-width="2"/>
+      <!-- Circular text & symbols in blue -->
+      <text font-size="13" fill="#1e40af" letter-spacing="2">
+        <textPath href="#circlePath" startOffset="2%">★ उमानाथ पौडेल  ★ अध्यापक ★ SINCE 2010 ★</textPath>
+      </text>
+      <!-- Central text in blue -->
+      <text x="100" y="108" text-anchor="middle" font-family="'Noto Sans Devanagari'" font-size="26" fill="#1e40af" font-weight="bold">उत्तम</text>
+    </svg>
+  </div>
         </div>
       </div>
 
@@ -465,7 +473,7 @@ html{
             <i class="fa-solid fa-graduation-cap mr-2" style="color:var(--ink-red);"></i><span data-i18n="fact-degree">Bachelor's Degree</span>
           </div>
           <div class="fact-chip rounded-lg px-4 py-3 text-sm font-medium">
-            <i class="fa-solid fa-chalkboard mr-2" style="color:var(--ink-red);"></i><span data-i18n="fact-exp">12+ Years Teaching</span>
+            <i class="fa-solid fa-chalkboard mr-2" style="color:var(--ink-red);"></i><span data-i18n="fact-exp">16+ Years Teaching</span>
           </div>
         </div>
       </div>
@@ -870,7 +878,7 @@ html{
       "fact-religion": "Hindu",
       "fact-location": "Sunbarshi-6, Morang",
       "fact-degree": "Bachelor's Degree",
-      "fact-exp": "12+ Years Teaching",
+      "fact-exp": "16+ Years Teaching",
       "stats-tag": "By The Numbers",
       "stats-title": "A Career Written in Chalk",
       "stat-years": "Years Teaching",
@@ -975,7 +983,7 @@ html{
       "journey-title": "शिक्षण यात्राको मार्गरेखा",
       "edu-heading": "शिक्षा",
       "edu-degree": "स्नातक तह (Bachelor's Degree)",
-      "edu-desc": "शिक्षकीय यात्राको बलियो आधार",
+      "edu-desc": "Bachelor in Business Studies (BBS)",
       "school-rising": "राइजिङ नेपाल सेकेन्डरी बोर्डिङ स्कुल",
       "school-holycross": "होली क्रस बाल आदर्श विद्या सदन",
       "role-teacher": "विषय शिक्षक",
@@ -997,7 +1005,7 @@ html{
       "sub-gk-desc": "इतिहास, भूगोल, विज्ञान र समसामयिक घटनाक्रमको व्यापक ज्ञान प्रदान गर्दै।",
       "phil-tag": "शिक्षण दर्शन",
       "phil-title": "मेरो शिक्षण सिद्धान्त",
-      "phil-sub": "हरेक कक्षामा मैले अङ्गीकार गर्ने नैतिक मूल्यहरू।",
+      "phil-sub": "हरेक कक्षामा मैले अपनाउने नैतिक मूल्यहरू।",
       "phil-patience-t": "धैर्यता",
       "phil-patience-d": "हरेक विद्यार्थीको सिक्ने गति फरक हुन्छ, र त्यसलाई सम्मान गर्नुपर्छ।",
       "phil-discipline-t": "अनुशासन",

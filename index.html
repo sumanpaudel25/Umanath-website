@@ -425,24 +425,43 @@ html{
           <div class="bg-white p-3 pb-10 shadow-2xl border border-amber-200 openable-wrap" style="width:290px;">
             <img src="Images/about.jpg" alt="Umanath Paudel portrait" class="w-full h-80 object-cover openable" data-gallery="about" data-idx="0" role="button" tabindex="0" aria-label="Open portrait photo" onerror="placeholderImg(this,'Umanath Paudel')">
             <p class="font-sign text-center text-xl mt-2 font-bold" style="color:var(--chalk-green);">Umanath Paudel</p>
-          </div>
+</div>
   <div class="absolute -top-8 -right-10 w-28 h-28 md:w-32 md:h-32">
     <svg viewBox="0 0 200 200" class="stamp rotate-[-12deg]">
       <defs>
-        <path id="circlePath" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/>
+        <!-- Adjusted radius (r=68) for perfect 360-degree text distribution -->
+        <path id="circlePath" d="M 100, 100 m -68, 0 a 68,68 0 1,1 136,0 a 68,68 0 1,1 -136,0"/>
       </defs>
-      <!-- Background circle: Solid non-transparent white background -->
-      <circle cx="100" cy="100" r="90" fill="#ffffff" stroke="#1e40af" stroke-width="3" stroke-dasharray="5 4"/>
-      <!-- Inner border circle in blue -->
-      <circle cx="100" cy="100" r="72" fill="none" stroke="#1e40af" stroke-width="2"/>
-      <!-- Circular text & symbols in blue -->
-      <text font-size="13" fill="#1e40af" letter-spacing="2">
-        <textPath href="#circlePath" startOffset="2%">★ उमानाथ पौडेल  ★ अध्यापक ★ SINCE 2010 ★</textPath>
+
+      <!-- Non-transparent solid white background base -->
+      <circle cx="100" cy="100" r="90" fill="#ffffff" />
+
+      <!-- Outer dashed/dotted circle with continuous CSS rotation -->
+      <circle 
+        cx="100" 
+        cy="100" 
+        r="90" 
+        fill="none" 
+        stroke="#1e40af" 
+        stroke-width="3" 
+        stroke-dasharray="6 5"
+        class="animate-spin origin-center"
+        style="animation-duration: 20s;"
+      />
+
+      <!-- Inner boundary circle -->
+      <circle cx="100" cy="100" r="74" fill="none" stroke="#1e40af" stroke-width="2"/>
+
+      <!-- Curved text evenly aligned around the circle -->
+      <text font-size="11.5" fill="#1e40af" font-weight="bold" letter-spacing="1.2px">
+        <textPath href="#circlePath" startOffset="0%">★ उमानाथ पौडेल ★ अध्यापक ★ SINCE 2010 </textPath>
       </text>
-      <!-- Central text in blue -->
-      <text x="100" y="108" text-anchor="middle" font-family="'Noto Sans Devanagari'" font-size="26" fill="#1e40af" font-weight="bold">उत्तम</text>
+
+      <!-- Central text -->
+      <text x="100" y="108" text-anchor="middle" font-family="'Noto Sans Devanagari', sans-serif" font-size="26" fill="#1e40af" font-weight="bold">उत्तम</text>
     </svg>
   </div>
+</div>
         </div>
       </div>
 
